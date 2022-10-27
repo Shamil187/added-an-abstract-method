@@ -6,7 +6,7 @@ public class Specialist extends Employee {
 
     @Override
     public String goToDayOff() {
-        return  "Отпуск нужен потому что хочу на рыбалку!!!";
+        return " для похода к врачу!";
     }
 
     public Specialist(String fio, int age, int salary, int levels) {
@@ -26,14 +26,19 @@ public class Specialist extends Employee {
 //        System.out.println("Отпуск нужен!");
 //    }
 
-
+    @Override
+    public String goToVocation() {
+        return "I am going to mountains";
+    }
 
     @Override
     void info() {
         super.info();
-        System.out.println("level: " + getLevels() + "\n" + "Я работаю с клиентами!!" + "\n"+ "Причина отпуска: " + goToDayOff()  + "\n==========");
+        System.out.println("level: " + getLevels() + "\n" + "Я работаю с клиентами!!" + "\n" + "Причина выходного: " + goToDayOff()  + "\n" + "Куда в отпуск: " + goToVocation() + "\n==========");
 
     }
-}
 
+
+}
+//+ "\n"+ "Куда в отпуск: " + goToVocation()
 

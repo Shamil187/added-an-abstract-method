@@ -6,7 +6,7 @@ public class Manager extends Employee {
 
     @Override
     public String goToDayOff() {
-        return  "Поеду на море !!!";
+        return  "Заболел";
     }
 
     public Manager(String fio, int age, int salary, boolean hasStocks) {
@@ -25,12 +25,17 @@ public class Manager extends Employee {
     @Override
     void info() {
         super.info();
-        System.out.println("Акции: " + isHasStocks() + "\n" + "Я разрабатываю процедуры!" + "\n" + "Причина отпуска: " + goToDayOff() + "\n================");
+        System.out.println("Акции: " + isHasStocks() + "\n" + "Я разрабатываю процедуры!" + "\n" + "Причина выходного: " + goToDayOff()  + "\n================");
+    }
+
+    @Override
+    public String goToVocation() {
+        return "I am going to England";
     }
 }
 
 
-
+//+ "\n"+ "Куда в отпуск: " + goToVocation()
 
 
 

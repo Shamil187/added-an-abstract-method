@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Specialist Harry = new Specialist();
@@ -18,19 +20,35 @@ public class Main {
         Manager Sophie = new Manager("Sophie", 45, 77232000,false);
 
         Ceo James = new Ceo("James",35,990000,true,true);
-        Harry.goToDayOff();
-        Harry.info();
-        Olive.info();
-        Amelia.info();
-        Jack.info();
-        Thomas.info();
-        Jacob.info();
-        Jessica.info();
-        William.info();
-        Sophie.info();
-        System.out.println(James);
+
+        Employee[]employees = new Employee[]{Olive,Amelia,Jack,Thomas,Jacob,Jessica,William,Sophie,James};
+        for (Employee employee:
+             employees) {
+            employee.info();
+            employee.goToVocation();
+        }
 
     }
+
+
+
+//        System.out.println(Employee(Specialist,Developer,Manager,Ceo));
+
+
+//
+//        Harry.goToDayOff();
+//        Harry.info();
+//        Olive.info();
+//        Amelia.info();
+//        Jack.info();
+//        Thomas.info();
+//        Jacob.info();
+//        Jessica.info();
+//        William.info();
+//        Sophie.info();
+//        System.out.println(James);
+//
+//    }
 }
 
 //Задание

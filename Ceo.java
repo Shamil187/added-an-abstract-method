@@ -17,12 +17,19 @@ public class Ceo extends Manager{
     }
     @Override
     public String goToDayOff() {
-        return  "Потому что я Босс !!";
+        return  "Встречи вне офиса!!";
+    }
+    @Override
+    public String goToVocation() {
+        return "I am going to Los Angeles";
     }
     public String toString() {
         return "name: " + getFio() + "\n" +
                 "age: " + getAge() + "\n" +
-                "salary: " + getSalary() + "\n" + "Акции: " + isHasStocks() + "\n" +  "Халявная машина: " + isHasCompanyCar() + "\n" + "Я работаю над IPO"+ "\n" + "Причина отпуска: " + goToDayOff();
+                "salary: " + getSalary() + "\n" + "Акции: " + isHasStocks() + "\n" +  "Халявная машина: " + isHasCompanyCar() + "\n" + "Я работаю над IPO"+ "\n" + "Причина выходного: "  + goToDayOff() ;
     }
+
+
 }
 
+// + "\n"+ "Куда в отпуск: " + goToVocation()

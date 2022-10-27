@@ -6,7 +6,7 @@ private String grades;
 
     @Override
     public String goToDayOff() {
-        return  "Поеду в горы !!!";
+        return  "По семейным обстоятельствам!!";
     }
 
     public Developer(String fio, int age, int salary, String grades) {
@@ -22,13 +22,19 @@ private String grades;
         this.grades = grades;
     }
     @Override
+    public String goToVocation() {
+        return "I am going to bootcamp";
+    }
+    @Override
     void info() {
         super.info();
-        System.out.println("grade: " + getGrades() + "\n" + "Я пишу код !" + "\n" + "Причина отпуска: " + goToDayOff() +  "\n================");
+        System.out.println("grade: " + getGrades() + "\n" + "Я пишу код !" + "\n" + "Причина выходного: " + goToDayOff()  +  "\n================");
     }
+
+
 }
 
 
-
+//+ "\n"+ "Куда в отпуск: " + goToVocation()
 
 
